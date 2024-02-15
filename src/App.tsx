@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import man from "/Users/adityagill/tasks/src/images/image-1.png";
+import man from "./images/image-1.png";
 function App(): JSX.Element {
     return (
         <div className="App">
