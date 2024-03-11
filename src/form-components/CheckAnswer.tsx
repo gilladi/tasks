@@ -20,8 +20,7 @@ export function CheckAnswer({
                     }
                 />
             </Form.Group>
-            {answer == expectedAnswer && <div>✔️</div>}
-            {answer != expectedAnswer && <div>❌</div>}
+            {answer === expectedAnswer ? <div>✔️</div> : <div>❌</div>}
         </div>
     );
 }
