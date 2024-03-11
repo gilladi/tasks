@@ -23,7 +23,7 @@ export function GiveAttempts(): JSX.Element {
                 disabled={attemptsLeft === 0}
                 onClick={() => setAttemptsLeft(attemptsLeft - 1)}
             >
-                Use One Attempt
+                use
             </Button>
             <Button
                 onClick={() => {
@@ -33,7 +33,7 @@ export function GiveAttempts(): JSX.Element {
                     }
                 }}
             >
-                Gain Attempts
+                gain
             </Button>
         </div>
     );
