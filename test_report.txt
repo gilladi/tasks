@@ -14,6 +14,7 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/objects.test.ts
 PASS src/arrays.test.ts
 PASS src/nested.test.ts
+PASS src/components/TwoDice.test.tsx
 PASS src/components/StartAttempt.test.tsx
 PASS src/form-components/MultipleChoiceQuestion.test.tsx
   ● Console
@@ -138,7 +139,6 @@ PASS src/form-components/MultipleChoiceQuestion.test.tsx
       at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22779:12)
 
-PASS src/components/TwoDice.test.tsx
 PASS src/functions.test.ts
 PASS src/bad-components/DoubleHalf.test.tsx
 PASS src/bad-components/ChooseTeam.test.tsx
@@ -146,11 +146,11 @@ PASS src/form-components/CheckAnswer.test.tsx
 PASS src/components/ChangeType.test.tsx
 PASS src/form-components/EditMode.test.tsx
 PASS src/components/CycleHoliday.test.tsx
-PASS src/form-components/ChangeColor.test.tsx
-PASS src/form-components/GiveAttempts.test.tsx
 PASS src/components/Counter.test.tsx
-PASS src/bad-components/ColoredBox.test.tsx
+PASS src/form-components/GiveAttempts.test.tsx
+PASS src/form-components/ChangeColor.test.tsx
 PASS src/components/RevealAnswer.test.tsx
+PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
 PASS src/App.test.tsx
   ● Console
@@ -170,7 +170,7 @@ PASS src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   99.57 |    96.25 |     100 |   99.55 |                   
+All files                    |   99.57 |    96.34 |     100 |   99.55 |                   
  src                         |   99.24 |    98.03 |     100 |   99.18 |                   
   App.tsx                    |     100 |      100 |     100 |     100 |                   
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -203,5 +203,5 @@ All files                    |   99.57 |    96.25 |     100 |   99.55 |
 Test Suites: 20 passed, 20 total
 Tests:       134 passed, 134 total
 Snapshots:   0 total
-Time:        8.211 s
+Time:        7.588 s
 Ran all test suites.
