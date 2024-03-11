@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-interface CheckAnswerProps {
+export function CheckAnswer({
+    expectedAnswer
+}: {
     expectedAnswer: string;
-}
-export function CheckAnswer({ expectedAnswer }: CheckAnswerProps): JSX.Element {
+}): JSX.Element {
     const [answer, setAnswer] = useState<string>("");
     return (
         <div>
@@ -19,7 +20,8 @@ export function CheckAnswer({ expectedAnswer }: CheckAnswerProps): JSX.Element {
                     }
                 />
             </Form.Group>
-            {answer === expectedAnswer ? <div>✔️</div> : <div>❌</div>}
+            {answer == expectedAnswer && <div>✔️</div>}
+            {answer != expectedAnswer && <div>❌</div>}
         </div>
     );
 }
